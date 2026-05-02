@@ -24,7 +24,7 @@ More than 2 hours of reading CVE reports we came to the conclusion that we might
 
 # Part 2 - Building the RCE exploit
 
-We already know that there is a vulnerable custom field option called "select_eval" but we have to find a way to reach this. Keep in mind this isn't reachable in the front end so we have to send a POST request. 
+## 2.1. We already know that there is a vulnerable custom field option called "select_eval" but we have to find a way to reach this. Keep in mind this isn't reachable in the front end so we have to send a POST request. 
 
 This is where LLMs come in handy. I asked Grok to assist me on making a python script that would:
 - Take the credentials given by the user via --username --pasword
